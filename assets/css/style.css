@@ -10,7 +10,8 @@
 7. Testimonial area CSS
 8. FAQ Area CSS
 9. Blog Area CSS
-10. Footer CSS
+10. Call to action
+11. Footer CSS
 
 
 =================================================*/
@@ -258,7 +259,7 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
 
 .breadcrumb-content h1 {
   font-weight: 400;
-  font-size: 72px;
+  font-size:34px;
   color: #FFFFFF;
 }
 
@@ -1483,6 +1484,17 @@ a.whatchat-btn:hover {
 }
 
 /*================================================
+9. Call to action CSS
+=================================================*/
+
+.call-to-action {
+    background: #e2e8f0;   
+}
+.call-to-action h2 {
+    font-weight: 700;
+}
+
+/*================================================
 10. Footer CSS
 =================================================*/
 .footer-border {
@@ -1842,57 +1854,8 @@ a.whatchat-btn:hover {
   font-size: 25px;
 }
 
-/*================================================
-26. Case Study Details CSS
-=================================================*/
-.case-study-details-content h5 {
-  font-weight: 400;
-  font-size: 14px;
-  color: #6440FA;
-}
 
-.case-study-details-content h2 {
-  font-weight: 400;
-  font-size: 24px;
-  margin: 10px 0 17px;
-  line-height: 33px;
-}
 
-.case-study-details-content a {
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #6440FA;
-}
-
-/*================================================
-27. Gallery Page CSS
-=================================================*/
-.gallery-wrap {
-  border-radius: 30px;
-  overflow: hidden;
-  margin-bottom: 24px;
-}
-
-.gallery-wrap:hover .gallery-img .gallery-hover {
-  opacity: 1;
-  -webkit-transform: rotateY(0deg) scale(1);
-          transform: rotateY(0deg) scale(1);
-}
-
-.gallery-wrap .gallery-img .gallery-hover {
-  height: 100%;
-  width: 100%;
-  background: rgba(100, 64, 250, 0.9);
-  top: 0;
-  left: 0;
-  padding: 30px;
-  -webkit-transform: rotateY(180deg) scale(0.5);
-          transform: rotateY(180deg) scale(0.5);
-  opacity: 0;
-  -webkit-transition: all 0.6s ease-out 0s;
-  transition: all 0.6s ease-out 0s;
-}
 
 /*================================================
 28. Contact Page CSS
@@ -1947,14 +1910,12 @@ a.whatchat-btn:hover {
 }
 
 .contact-info .contact-details-icon i {
-  width: 70px;
-  height: 70px;
-  background: #6440FA;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 35px;
-  -webkit-transition: all 1s ease 0s;
-  transition: all 1s ease 0s;
+ width: 50px;
+    height: 50px;
+    background: #6440FA;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
 }
 
 .contact-info .contact-details-info {
@@ -1962,8 +1923,8 @@ a.whatchat-btn:hover {
 }
 
 .contact-info .contact-details-info h3 {
-  font-weight: 600;
-  font-size: 18px;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 
@@ -2105,114 +2066,7 @@ a.whatchat-btn:hover {
   font-size: 24px;
 }
 
-/*
-============================================
-============= Preloader CSS ================
-*/
-.preloader {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: 99999;
-  background: #fff;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
 
-.sk-cube-grid {
-  width: 70px;
-  height: 70px;
-}
-
-.sk-cube-grid .sk-cube {
-  width: 33%;
-  height: 33%;
-  background-color: #6947FA;
-  float: left;
-  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-}
-
-.sk-cube-grid .sk-cube1 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.sk-cube-grid .sk-cube2 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-.sk-cube-grid .sk-cube3 {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-.sk-cube-grid .sk-cube4 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-.sk-cube-grid .sk-cube5 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.sk-cube-grid .sk-cube6 {
-  -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
-
-.sk-cube-grid .sk-cube7 {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s;
-}
-
-.sk-cube-grid .sk-cube8 {
-  -webkit-animation-delay: 0.1s;
-  animation-delay: 0.1s;
-}
-
-.sk-cube-grid .sk-cube9 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-@-webkit-keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    -webkit-transform: scale3D(1, 1, 1);
-    transform: scale3D(1, 1, 1);
-  }
-  35% {
-    -webkit-transform: scale3D(0, 0, 1);
-    transform: scale3D(0, 0, 1);
-  }
-}
-
-@keyframes sk-cubeGridScaleDelay {
-  0%, 70%, 100% {
-    -webkit-transform: scale3D(1, 1, 1);
-    transform: scale3D(1, 1, 1);
-  }
-  35% {
-    -webkit-transform: scale3D(0, 0, 1);
-    transform: scale3D(0, 0, 1);
-  }
-}
-
-/*
-============= Preloader CSS END ================
-================================================
-*/
 /*Back to Top btn*/
 .back-to-top-btn {
   position: fixed;
@@ -2243,4 +2097,29 @@ a.whatchat-btn:hover {
 .back-to-top-btn i::before {
   vertical-align: middle;
 }
-/*# sourceMappingURL=style.css.map */
+
+
+
+.choose-block {
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px;
+    margin-bottom: 100px;
+}
+.service-details-area .assignment-tab-wrap {   
+    position: sticky;
+    top: 100px;
+    background: rgba( 255, 255, 255, 0.15 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.single-cart {
+    padding: 20px;
+}
