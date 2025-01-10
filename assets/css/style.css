@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  color: #1A064E;
+  color:#1c3971;
   text-transform: capitalize;
 }
 
@@ -131,15 +131,13 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
   z-index: 2;
 }
 
-.section-title.style-two h1 {
-  color: #fff;
-}
+
 
 .section-title p {
   font-weight: 600;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #6440FA;
+  color: #f27b00;
   margin-bottom: 14px;
 }
 
@@ -307,13 +305,13 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
 
 .header-menu-area {
   width: 100%;
-  position: absolute;
+/*  position: absolute;*/
   left: 0;
   top: 0;
   z-index: 9;
   background: transparent;
   padding: 0 98px;
-  border-bottom: 3px solid #704FFD;
+  /*border-bottom: 3px solid #704FFD;*/
 }
 
 .header-menu-area.header-menu-style-2 {
@@ -341,7 +339,7 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
   z-index: 1;
 }
 .web-btn {
-    background: #FF9D0F;
+    background: #f27b00;
     border-radius: 5px;
     /* width: 100%; */
     /* font-family: "Nunito", sans-serif; */
@@ -351,8 +349,9 @@ input:-webkit-autofill:hover, input:-webkit-autofill:focus {
     color: #FFFFFF;
     padding: 7px 20px;
     margin-top: 40px;
-    display: inline-block;
+    display: inline-block;   
 }
+
 .web-btn:hover{
   background: #a86500;
   color: #fff;
@@ -389,7 +388,26 @@ a.whatchat-btn:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
+.right_boxes {
+    background: #f6f8ff !important;
+     font-size: 80px;
+    color: #f27b00;
 
+}
+
+.grantee-box {
+    padding: 24px;
+    background-color: #fff;
+    border: 1px solid #cce2f5;
+    border-radius: 25px;
+    height: 230px;
+    transition: transform .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+   
+}
 .hamburger span.h-top {
   top: 0;
 }
@@ -431,8 +449,8 @@ a.whatchat-btn:hover {
 
 .main-nav > ul > li {
   display: inline-block;
-  position: relative;
-  padding: 20px 23px;
+/*  position: relative;*/
+  padding: 20px 6px;
 }
 
 .main-nav > ul > li.has-child-menu:after {
@@ -454,33 +472,34 @@ a.whatchat-btn:hover {
 
 .main-nav > ul > li > a {
   display: block;
-  text-decoration: none;
-  font-family: 'Nunito';
+  text-decoration: none; 
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: #fff;
+  color:#444;
 }
 
 .main-nav > ul > li:hover > a:after {
   opacity: 1;
 }
-
-.main-nav ul li .sub-menu {
-  position: absolute;
-  left: 0;
-  top: 90px;
-  min-width: 200px;
+/*li.has-child-menu2 {
+    position: relative;
+}*/
+.sub-menu2 {
+  position: absolute;  
+  top:90px;
+   min-width: 200px;
+  width:40%;
   list-style: none;
   margin: 0;
-  padding: 0;
+      padding: 10px 30px;
   opacity: 0;
   visibility: hidden;
   z-index: 9999;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-75px);
+          transform: translateY(-75px);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   background: #fff;
@@ -490,13 +509,52 @@ a.whatchat-btn:hover {
   border: 1px solid #ddd;
 }
 
+.sub-menu {
+  position: absolute;
+  left: 0;
+  top:90px;
+      min-width: 530px;
+    width: 97%;
+  list-style: none;
+  margin: 0;
+      padding: 30px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+  -webkit-transform: translateY(-75px);
+          transform: translateY(-75px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background: #fff;
+  -webkit-box-shadow: 7px 10px 40px rgba(13, 52, 79, 0.1);
+          box-shadow: 7px 10px 40px rgba(13, 52, 79, 0.1);
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+.list-menu h4 {
+    margin-bottom: 12px;
+}
+.list-menu ul li {
+    line-height: 36px;
+    border-bottom: 1px dotted #ccc;
+}
+
 .main-nav ul li .sub-menu li .sub-menu {
   right: -200px;
   left: inherit;
   top: 0;
 }
-
+.main-nav ul li .sub-menu2 li .sub-menu2 {
+  right: -200px;
+  left: inherit;
+  top: 0;
+}
 .main-nav ul li .sub-menu > li {
+  display: block;
+  margin: 0;
+  position: relative;
+}
+.main-nav ul li .sub-menu2 > li {
   display: block;
   margin: 0;
   position: relative;
@@ -514,6 +572,23 @@ a.whatchat-btn:hover {
   transition: all 0.3s;
 }
 
+.main-nav ul li .sub-menu2 > li {
+  display: block;
+  margin: 0;
+  position: relative;
+}
+
+.main-nav ul li .sub-menu2 > li a {
+  display: block;
+  padding: 15px 18px;
+  line-height: 1;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
 .main-nav ul li .sub-menu > li a:last-child {
   border: none;
 }
@@ -553,21 +628,30 @@ a.whatchat-btn:hover {
   visibility: visible;
   opacity: 1;
 }
+.main-nav > ul > li:hover > .sub-menu2, .main-nav ul li .sub-menu2 li:hover > .sub-menu2, .main-nav ul li .sub-menu2 li .sub-menu2 li:hover > .sub-menu2 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
 
 .menu-btn {
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 5px;
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding: 14px 28px;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px; 
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 10px 12px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    /* padding: 7px 20px; */
+    background-color: #f27b00;
+    position: relative;
+    overflow: hidden;
 }
 
 .menu-btn:hover {
@@ -575,12 +659,30 @@ a.whatchat-btn:hover {
           transform: translateY(2px);
   color: #fff;
 }
-
+.menu-btn:before {
+  webkit-box-shadow: 0 0 0 0 rgb(232 232 232 / 70%);
+    box-shadow: 0 0 0 0 rgb(232 232 232 / 70%);
+    border-radius: 100%;
+    content: "";
+    -webkit-animation: pulses 2s infinite;
+    animation: pulses 2s infinite;
+    display: inline-block;
+    background: rgba(255,255,255,.27);
+    width: 110px;
+    height: 110px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+  }
+  @keyframes pulses{from,to{-webkit-transform:scale3d(0, 0, 0);transform:scale3d(0, 0, 0)}50%{-webkit-transform:scale3d(1.15, 1.15, 1.15);transform:scale3d(1.15, 1.15, 1.15)}}
 
 .sticky {
   position: fixed;
   top: 0;
-  background: #000;
+  background: #fff;
   z-index: 999;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
           animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -591,13 +693,37 @@ a.whatchat-btn:hover {
 }
 
 .sticky .main-nav > ul > li {
-  padding: 34px 23px;
+    padding: 34px 10px;
 }
 
 .sticky .main-nav > ul > li.has-child-menu:after {
   top: 33px;
 }
 
+.rating-box {
+    background-color: #d0faec;
+    margin-right: 10px;
+    text-align: center;
+    display: flex !important;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 3px;
+        width: 86%;
+}
+.light-yellow {
+    background-color: #fff5d9 !important;
+}
+.light-d-pink {
+    background-color: #ffdeeb !important;
+}
+.light-green {
+    background-color: #d0faec !important;
+}
+.light-sky {
+    background-color: #d3f6fe !important;
+}
 .menu-info-wrap {
   z-index: 99;
   top: 0;
@@ -637,13 +763,24 @@ a.whatchat-btn:hover {
 3. Hero CSS
 =================================================*/
 .hero-area {
-  background-image: url(../images/shape/hero.png);
+  background-image:linear-gradient(to bottom right,rgb(4 30 69) 45%,rgb(8 37 84) 100%)!important;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   padding: 232px 0 250px;
+  position: relative;
 }
-
+.hero-area:before{
+  content: "";
+  position: absolute;
+  height: 126px;
+  width: 100%;
+  bottom: -6px;
+  background:  url(../images/waves.png);
+      background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 .hero-round-1 {
   -webkit-animation: rot-2 20s linear infinite;
           animation: rot-2 20s linear infinite;
@@ -651,17 +788,52 @@ a.whatchat-btn:hover {
   left: 55%;
 }
 
-.hero-content h1 { 
-      font-size: 60px;
-    line-height: 66px;
-  color: #FFFFFF;
+.hero-content h1 {
+    font-size: 34px;
+    margin-bottom: 11px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+.hero-content p {
+    color: #fff;
+}
+ul.banner-list {
+    margin: 10px 0px;
+}
+ul.banner-list li {
+    display: inline-flex;
+    width: 48%;
+    margin-bottom: 6px;
+    color: #fff;
+    padding: 4px 10px;
+    background-color: #0b2e64;
+    border-radius: 4px;
+    font-weight: 700;
+    align-items: center;
+}
+ul.banner-list li span {
+        margin-right: 8px;
+    color: #f27b00;
+    font-size: 20px;
+    display: inline-flex;    
+    border-radius: 4px;   
+    align-items: center;    
+    justify-content: center;
+}
+.hero-rating-wrap-x {
+    display: flex;
+}
+.hero-rating {
+    width: 150px;
+    margin-right: 31px;
 }
 .hero-content h6{
-  color:#FF9D0F;
+  color:#f27b00;
 }
 .hero-content h2 {
   font-weight: 400;
-  font-size: 24px;
+      font-size: 20px;
+    line-height: 30px;
   color: #FFFFFF;
   margin: 18px 0 20px;
 }
@@ -677,9 +849,15 @@ a.whatchat-btn:hover {
 }
 
 .hero-content .hero-rating-wrap .hero-rating ul {
-  margin-top: 26px;
+    margin-top: 0px;
+    margin-left: 40px;
 }
 
+.text-box p {
+    padding: 0 18px;
+    font-size: 13px;
+    color: #000;
+}
 .hero-content .hero-rating-wrap .hero-rating ul li {
   display: inline-block;
   line-height: 1;
@@ -738,7 +916,7 @@ a.whatchat-btn:hover {
 }
 
 .assignment-tab-wrap .nav-link.active, .assignment-tab-wrap .nav-pills .show > .nav-link {
-  color: #FF9D0F;
+  color: #f27b00;
   background-color: unset;
 }
 
@@ -819,7 +997,7 @@ a.whatchat-btn:hover {
 
 .assignment-form-wrap form .assignment-btn-wrap button {
   border: none;
-  background: #FF9D0F;
+  background:#f27b00;
   border-radius: 5px;
   width: 100%;
   font-family: "Nunito", sans-serif;
@@ -837,7 +1015,7 @@ a.whatchat-btn:hover {
 }
 
 .step-box {
-    display: block;
+    display: flex;
     padding: 25px;
     position: relative;
     border-radius: 20px;
@@ -853,7 +1031,7 @@ a.whatchat-btn:hover {
 .step-box .icon-box i {
     align-items: center;
     background-color: transparent;
-        background-color: #6744fa;
+        background-color: #05204a;
     color: #fff !important;
     border: 1px solid rgba(0,0,0,.08);
     border-radius: 50%;
@@ -871,7 +1049,7 @@ a.whatchat-btn:hover {
 }
 .icon-box .overlay-list {
     align-items: center;
-    background-color:#FF9D0F;
+    background-color:#f27b00;
     border-radius: 50%;
     display: flex;
     height: 30px;
@@ -913,6 +1091,7 @@ a.whatchat-btn:hover {
 }
 .content-box .title-box {
     margin-bottom: 11px;
+        padding-left: 17px;
 }
 .single-service-box .service-content p {
   line-height: 30px;
@@ -920,7 +1099,7 @@ a.whatchat-btn:hover {
 }
 
 .single-service-box:hover .service-content h3 {
-  color: #6440FA;
+  color: #051f47;
 }
 
 .single-service-box:hover .service-icon img {
@@ -948,7 +1127,7 @@ a.whatchat-btn:hover {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 72px;
-  color: #1A064E;
+  color: #051f47;
   font-style: normal;
   line-height: 1;
 }
@@ -964,7 +1143,7 @@ a.whatchat-btn:hover {
 6. Assignment Area CSS
 =================================================*/
 .assignment-area {
-  background-image: url(../images/shape/assignment-1.png);
+/*  background-image: url(../images/shape/assignment-1.png);*/
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -973,7 +1152,6 @@ a.whatchat-btn:hover {
 
 .assignment-text p {
   text-transform: capitalize;
-  color: #FFFFFF;
   line-height: 33px;
 }
 
@@ -989,15 +1167,16 @@ a.whatchat-btn:hover {
           transform: translateX(3px);
 }
 
-.assignment-box {
-  border-right: 1px solid rgba(255, 255, 255, 0.07);
-  margin-bottom: 24px;
+.assignment-box {    
+    margin-bottom: 24px;
+    background: linear-gradient(to right bottom, rgba(242, 123, 0, 0.08) 20%, rgba(8, 37, 84, 0.12) 100%) !important;
+    padding: 20px;
+        border-radius: 10px;
 }
-
 .assignment-box .assignment-icon i {
   font-size: 50px;
   line-height: 1;
-  color: #fff;
+  color: #f27b00;
   z-index: 1;
   position: relative;
   -webkit-transition: all .5s ease 0s;
@@ -1034,7 +1213,7 @@ a.whatchat-btn:hover {
   bottom: 0;
   width: 110px;
   height: 1px;
-  background: rgba(255, 255, 255, 0.07);
+  background:rgb(40 74 124);
   content: "";
 }
 
@@ -1044,7 +1223,7 @@ a.whatchat-btn:hover {
   bottom: 0;
   width: 50px;
   height: 1px;
-  background: rgba(100, 64, 250, 0.5);
+  background:#f27b00;
   content: "";
   -webkit-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
@@ -1053,19 +1232,20 @@ a.whatchat-btn:hover {
 }
 
 .assignment-box .assignment-title h3 {
-  color: #fff;
+  color: #000;
+  font-size: 20px;
 }
 
 .assignment-box .assignment-content p {
-  line-height: 30px;
+  line-height: 26px;
   text-transform: capitalize;
-  color: rgba(255, 255, 255, 0.7);
+ color: #000;
   margin-bottom: 32px;
   padding-right: 30px;
 }
 
 .assignment-box .assignment-content a i {
-  color: #301575;
+  color: #f27b00;
   font-size: 32px;
   line-height: 1;
   -webkit-transition: all 1s ease 0s;
@@ -1073,7 +1253,7 @@ a.whatchat-btn:hover {
 }
 
 .assignment-box:hover .assignment-icon i {
-  color: #6440FA;
+    color: #1067ed;
 }
 
 .assignment-box:hover .assignment-icon .assignment-icon-shape .assignment-icon-shape-2 {
@@ -1275,19 +1455,12 @@ a.whatchat-btn:hover {
 
 .testimonial-title h1 {
   font-weight: 900;
-  font-size: 72px;
+  font-size:38px;
   line-height: 1;
   text-transform: capitalize;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
-  position: absolute;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background: url(../images/animated-text-fill.png) repeat-y;
-  -webkit-background-clip: text;
   /* Animate Background Image */
-  -webkit-text-fill-color: #6440fab8;
+  -webkit-text-fill-color:#051f47;
   -webkit-animation: aitf 80s linear infinite;
           animation: aitf 80s linear infinite;
   /* Activate hardware acceleration for smoother animations */
@@ -1627,7 +1800,7 @@ a.whatchat-btn:hover {
 
 .single-widget .footer-title h3 {
   font-size: 18px;
-  color: #FFFFFF;
+  color: #051f47;
   margin-bottom: 40px;
 }
 
@@ -1648,7 +1821,7 @@ a.whatchat-btn:hover {
 }
 
 .single-widget .footer-link ul li a, .single-widget .footer-contact ul li a {
-  color: #FFFFFF;
+  color:#484848;
   -webkit-transition: .3s;
   transition: .3s;
   display: block;
@@ -1671,12 +1844,10 @@ a.whatchat-btn:hover {
 }
 
 .footer-area {
-  background: #fff;
-  background-image: url(../images/shape/footer-1.png);
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 390px 0 7px;
+  padding: 50px 0 7px;
 }
 
 .footer-area.footer-area-style-2 {
@@ -1725,7 +1896,7 @@ a.whatchat-btn:hover {
 }
 
 .copy-text p {
-  color: #FFFFFF;
+  color: #403c3c;
 }
 
 .copy-text p a {

@@ -37,13 +37,14 @@
         padding-right:0px;
     }
 
-    .assignment-area {
-        padding: 150px 0 126px;
-    }
+  .assignment-area {
+    padding: 0 0 56px;
+}
 
     .hero-area {
-        padding: 130px 0 182px;
-    }
+    padding: 40px 0 106px;
+    margin-bottom: 50px;
+}
 
     .header-menu-area {
         padding: 0 10px;
@@ -242,7 +243,9 @@
 /* Wide Mobile Layout: 480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) { 
 
-
+.hero-area { 
+    padding: 30px 0 120px;
+}
 
 }
 /* Wide Mobile Layout: 480px. end */
@@ -354,10 +357,9 @@
 
 .assignment-area {
     background-image: none;
-    padding: 120px 0 96px;
-    background: #1A064E;
+    padding: 0px 0 0px;
+    /* background: #1A064E; */
 }
-
 
 .single-widget.single-widget-last {
     padding-top: 0;
@@ -490,7 +492,7 @@
         z-index: 99999;
         height: 100%;
         overflow: auto;
-        background: #422aa5;
+        background:#041e45;
         border-right: 1px solid #dddddd4f;
         -webkit-overflow-scrolling: touch;
         -webkit-transform: translateX(-250px);
@@ -536,12 +538,15 @@
         display: block;
         line-height: 35px
     }
+    li.has-child-menu {
+    position: relative;
+}
     .main-nav ul li .sub-menu {
         position: static;
         min-width: 200px;
         background: transparent;
         border: none;
-        padding: 5px 0px 5px 20px;
+        padding: 5px 0px 5px 0px;
         opacity: 1;
         visibility: visible;
         -webkit-box-shadow: none;
