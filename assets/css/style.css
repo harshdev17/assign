@@ -55,7 +55,7 @@ html, body {
   font-weight: 400;
   font-size: 14px;
   color: #777777;
-  background: #F6F6F6;
+ /* background: #F6F6F6;*/
 }
 
 p {
@@ -1413,8 +1413,25 @@ ul.banner-list li span {
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
-
-
+.ser-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #f27b00;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 100px;
+    margin: 0 auto;
+}
+.ser-para {
+    width: 56%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.ser-para p{
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 0px 50px;
+  }  
 
 /*================================================
 7. Testimonial area CSS
@@ -1431,8 +1448,7 @@ ul.banner-list li span {
     margin-bottom: 40px;
     padding: 20px;
     border-radius: 12px;
-    background: #ffffff;
-    box-shadow: 26px 26px 77px #dedede, -26px -26px 77px #ffffff;
+    background: #f6f6f6;
 }
  .hero-rating ul li i {
     font-size: 12px;
@@ -1801,7 +1817,7 @@ ul.banner-list li span {
 .single-widget .footer-title h3 {
   font-size: 18px;
   color: #051f47;
-  margin-bottom: 40px;
+  margin-bottom:20px;
 }
 
 .single-widget .footer-link ul.useful-2, .single-widget .footer-contact ul.useful-2 {
@@ -1821,11 +1837,23 @@ ul.banner-list li span {
 }
 
 .single-widget .footer-link ul li a, .single-widget .footer-contact ul li a {
-  color:#484848;
-  -webkit-transition: .3s;
-  transition: .3s;
-  display: block;
-      font-size: 12px;
+    color: #080808;
+    -webkit-transition: .3s;
+    transition: .3s;
+    display: block;
+    font-size: 12px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px #cccccc45;
+    padding: 8px;
+}
+.footer-rating-logo a {
+    display: block;
+    width: 103px;
+    margin-bottom: 40px;
+}
+
+.footer-rating-logo a img {
+    max-width: 100%;
 }
 
 .single-widget .footer-link ul li a:hover, .single-widget .footer-contact ul li a:hover {
@@ -1842,7 +1870,15 @@ ul.banner-list li span {
 .single-widget .footer-contact ul li a {
   font-weight: 400;
 }
-
+.footer-rating-logo {
+    background-color: #fff;
+    text-align: center;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    padding: 20px;
+    box-shadow: 0px 0px 10px #d7d3cf;
+    border-radius: 10px;
+}
 .footer-area {
   background-size: 100% 100%;
   background-position: center;
@@ -2088,7 +2124,85 @@ ul.banner-list li span {
     color: #fff;
     font-size: 18px;
 }
+.country-list{margin-bottom: 20px;}
+.country-list ul{
+  margin: 20px 0px;
+}
+.disclaimer{
+  clear: both;
+  margin: 20px 0px;
+}
+.disclaimer p {
+    font-size: 12px;
+    text-align: center;
+}
 
+.bottom-features {
+    width: 100%;
+}
+.bottom-features .heading {
+    color: #1b6fcb;
+    font-size: 25px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.bottom-features li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0 8px 15px;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    color: #444;
+    font-size: 13px;
+}
+section.explore-excel-wrap {
+    background-color: #f8f9fb;
+    background-image: linear-gradient(to bottom right,rgb(4 30 69) 45%,rgb(8 37 84) 100%)!important;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px;
+}
+.service-listing ul{
+  margin-top:30px;
+}
+.service-listing ul li {
+    width: 32%;
+    float: left;
+    line-height: 44px;
+}
+.bottom-features {
+    width: 80%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+        text-align: center;
+}
+.bottom-features p{
+  text-align: center;
+  margin-top: 20px;
+}
+.bottom-features p span {
+    display: block;
+    text-align: center;
+}
+.left-listing {
+    color: #fff;
+}
+.left-listing h2{
+  color: #fff;
+  margin-bottom: 12px
+}
+.left-listing p{
+  margin-bottom: 10px;
+}
+.country-list ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
 .contact-info .contact-details-info {
   padding-left: 25px;
 }
