@@ -13,7 +13,7 @@
     background-color: #1c3971 !important;
 }
 .bg-green{
-    background-color: #25d366 !important;
+    background-color: #25d366;
 }
 
   a:hover{text-decoration: none;}
@@ -71,7 +71,7 @@ a.order-button {
     background:#f27b00;
     color: #fff;
     margin: 0 auto;
-    padding: 7px 25px;
+    padding: 10px 25px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -363,12 +363,6 @@ color: #000;
     display: block;
     line-height: inherit;
 }
-.scaner-code {
-    display: inline-block;
-    border: 10px solid #fff;
-    padding: 0px;
-    box-shadow: 0px 0px 13px #98c7bf;
-}
 .review-strip {
     display: flex;
     align-items: center;    
@@ -391,18 +385,10 @@ color: #000;
     right: 20px;
     font-size: 15px;
 }
-.button-group .re-logo .order-button {
-    margin-right: 0px;
-    padding: 12px 36px;
-    background-color: transparent;
-}
-.button-group .re-logo .order-button i{
-    margin-right:6px;
-}
+
 .review-strip .re-logo {
     margin-right: 20px;
 }
-
 .re-logo a {
     display: inline-block;
     margin-right: 4px;
@@ -435,11 +421,6 @@ color: #000;
 a.whatchat-btn:hover {
     background-color: #0be75d;
     color: #fff;
-}
-.button-group {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .banner_form {
     border-radius: 10px;
@@ -565,10 +546,10 @@ section.top-content {
 .top-content .left h2{
     text-align: left;
 }
-/*.top-content .left-inner {
+.top-content .left-inner {
     height: 350px;
     overflow: auto;
-}*/
+}
 
 .top-content ul {
     display: flex;
@@ -694,7 +675,7 @@ section.top-content {
 }
 .discount-desktop .discount-inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .discount-desktop .discount-inner .offer {
     position: relative;
@@ -754,17 +735,16 @@ section.top-content {
     z-index: -1;
 }
 .discount-desktop .discount-inner .offer-action {
-    width: 84%;
+    width: 63%;
     padding: 20px 0px;
 }
 .discount-desktop .discount-inner .tagline {
     font-size: 30px;
     line-height: 30px;
         font-weight: 700;
-            margin-bottom: 16px;
 }
 .discount-desktop .discount-inner .offer-action .offer-left {
-    width: 67%;
+    width: 77%;
     float: left;
     margin-right: 15px;
 }
@@ -778,10 +758,10 @@ section.top-content {
 
 section.process {
     padding: 50px 0px;
-    background-color: #f3f9fd;    
+    background-color: #f3f9fd;
 }
 section.process h2 {
-    
+    text-align: left;
     margin-bottom: 20px;
 }
 .conversion-btn {
@@ -798,13 +778,10 @@ section.process h2 {
     color: #fff;
 }
 .process li {
-    padding-left: 0px;
+    padding-left: 30px;
     margin-bottom: 30px;
     position: relative;
     list-style: none;
-    background-color: #fff;
-    padding: 8px 10px;
-    border-radius: 4px;
 }
  .process .tagline {
     font-size: 16px;
@@ -816,28 +793,20 @@ section.process h2 {
 .process li p {
     color: #333;
 }
-.process li span {   
-   
+.process li span {
+    position: absolute;
+    left: 0;
     font-size: 25px;
     color: #f27b00;
-    background-color: #fff;
-    width: 60px;
-    height: 60px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    box-shadow: 0px 0px 3px #ccc;
-    margin-bottom: 20px;
 }
-/*.process li::before {
+.process li::before {
     content: "";
     position: absolute;
     left: -22px;
     background: url(../img/home-sprite.svg) no-repeat -6px -150px;
     height: 42px;
     width: 42px;
-}*/
+}
 
 .testimonials{
     background-color: #f8f9fb;
@@ -977,11 +946,10 @@ section.services {
 
 
 /* call to caction */
-.call-to-action {
-    /* background: url(../img/cta-bg.webp) no-repeat center; */
+.call-to-action{
+    background: url(../img/cta-bg.webp) no-repeat center;
     background-size: cover;
     padding: 30px 0px;
-    background-color: #00456e;
 }
 .call-to-action p{
     color: #fff;
@@ -1029,13 +997,12 @@ section.services {
 
 section#call-to-action-3 {
     padding: 25px 0;
-    /* background-image: url(../img/dissertation-writing-bg.webp); */
+    background-image: url(../img/dissertation-writing-bg.webp);
     width: 100%;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     text-align: center;
-    background: linear-gradient(to bottom right,rgb(4 30 69) 45%,rgb(8 37 84) 100%)!important;
 }
 
 section#call-to-action-3 p{
@@ -1271,7 +1238,7 @@ nav.desktop-menu {
     display: none;
 }
 .banner-content h1 {
-    font-size: 26px;
+    font-size: 30px;
     text-align: center;
 }
 .banner-content p {   
@@ -1280,17 +1247,14 @@ nav.desktop-menu {
 .banner-content ul li i {   
     font-size: 20px;
 }
-.banner-content ul li {
-    margin: 12px 12px 12px 0;
-    padding: 0 0 0 30px;
-    font-size: 10px;
+.banner-content ul li {  
+    margin: 12px 12px 12px 0;  
+    padding: 0 0 0 30px;   
 }
-
 .banner-content ul li span {
-    font-size: 12px;  
+    font-size: 16px;  
     font-weight: 500;
 }
-
 .banner-content {
     margin-bottom: 22px;
 }
@@ -1302,34 +1266,22 @@ nav.desktop-menu {
     margin-right: 15px;    
 }
   .mobile-menu-fixed-bar {
-        background:#fff;
+        background:#1b6fcb;
         position: fixed;
         left: 0;
         bottom: 0;
         width: 100%;
         z-index: 1;        
-        box-shadow:0 -1px 10px -1px rgb(185 185 185);
-
+        box-shadow: 0 -1px 10px -1px rgba(0, 0, 0, .35);
 
     }
-
-    .btn-outline-orange {
-    color: #f27b00;
-    border-color: #f27b00;
-}
     .mobile-menu-fixed-bar ul li {
-    border-right: 1px solid #dfdfdf;
+    border-right: 1px solid #ffffff;
     display: inline-block;  
     text-align: center;
     padding: 10px 0px;
     overflow: hidden;
         width: 24%;
-}
-.mobile-menu-fixed-bar ul li a {
-    font-size: 10px;
-    color: #2e2e2e;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
 }
 .mobile-menu-fixed-bar ul li:last-child{
     border-right:none;
@@ -1337,7 +1289,7 @@ nav.desktop-menu {
     .mobile-menu-fixed-bar ul li span {
         margin-right: 0;
         display: block;
-        font-size:16px;
+        font-size: 24px;
         line-height: 0;
     }
 
@@ -1402,52 +1354,8 @@ nav ul li:hover .short-submenu {
 .discount-desktop .discount-inner {
     flex-wrap: wrap;
 }
-.whatchat-btn {   
-    font-size: 12px;  
-    padding: 6px 8px;   
-}
-   a.search-btn {  
-    padding: 4px 8px;
-        font-size: 14px;
-}
-.button-group {
-    flex-wrap: wrap;     
-    justify-content: center;
-}
-.button-group .re-logo {
-    margin-bottom: 13px;
-}
-.button-group .re-logo .order-button {
-    margin-right: 0px;
-    padding: 6px 30px;    
-}
 
-.discount-desktop .discount-inner .offer-action {
-    width: 100%;    
-        text-align: center;
-}
-.discount-desktop .discount-inner .offer-action .offer-left {
-    width: 100%;
-        padding-top: 40%;        
-    margin-bottom: 20px;
-
-    }
- a.order-button {
-    font-size: 12px;   
-    padding: 6px 12px;
    
-}
-.discount-desktop .discount-inner .offer {
-    width: 120px;
-    margin: 0 auto;
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-.discount-desktop .discount-inner .tagline {
-    font-size: 20px;
-    }
-
   }
 
 
