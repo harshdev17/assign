@@ -658,7 +658,7 @@ section.top-content {
 }
 .title p {
     margin-bottom: 15px;
-    color: #575757;
+    color: #000;
     padding: 0 8%;
     margin-top: 5px;
     font-size: 16px;
@@ -1290,7 +1290,7 @@ button.btn-table-toggle {
     border: 1px solid #a19e9e;
 }
 .table-of-content ul {
-    padding-left:3px;
+    padding-left: 23px;
     margin-top: 16px;
 }
  .table-of-content ul li::marker {
@@ -1314,66 +1314,10 @@ section.ser-main-content ul{
 section.ser-main-content ul li {
         list-style: none;
     line-height: 30px;
-    width: 100%;
-    position: relative;
-        padding-left: 24px;
 }
 section.ser-main-content ul li span {
     margin-right: 6px;
-    color: #25d366;
-        position: absolute;
-    left: 0;
-
-}
-.ser-sidebar .top-content .right li span {   
-    position: inherit;
-}
-.top-content .right ul li span {
-    position: inherit;
-}
-ul.common-scroll li{
-    padding-left: 16px !important;
-}
-ul.common-scroll li span i {
-    color: #000 !important;
-    font-size: 10px;
-}
-.ser-main-content h2, .ser-main-content h3, .ser-main-content h4{
-    position: relative;
-    border-bottom: 1px solid #dedede;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    margin-top: 20px;
-}
-.ser-main-content h2:before, .ser-main-content h3:before, .ser-main-content h4:before{
-    background-color: #F27B00;
-    content: "";
-    width: 60px;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    top: 40px;
-    display: block;
-}
- .ser-main-content h3:before{
-    background-color: #F27B00;
-    content: "";
-    width: 60px;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    top:38px;
-    display: block;
-}
-.ser-main-content h4:before{
-    background-color: #F27B00;
-    content: "";
-    width: 60px;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    top:33px;
-    display: block;
+    color: #1c3971;
 }
 
 section.top-content.service-grade {
@@ -1476,126 +1420,6 @@ button.request-btn {
     margin-top: 10px;
 }
 
-.ser-sidebar .service-list {
-    box-shadow: 0 0 7px rgb(0 0 0 / 35%);
-    padding: 18px;
-    margin-top: 25px;
-    border-radius: 6px;
-}
-.ser-sidebar .service-list ul li {
-    display: block;
-    width: 100%;
-}
-.adbanner{
-    margin-top: 25px;
-
-}
-.adbanner img{
-    border-radius: 4px;
-}
-.services-img{
-    margin: 16px 0px;
-}
-
-.other-service {
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, .25);  
-    padding: 18px;
-    margin-top: 25px;
-    border-radius: 6px;
-}
-.other-service .title {
-    font-size: 20px;  
-    font-weight: 500;
-    margin-bottom: 10px;
-    border-bottom: 1px solid #dedede;
-    padding-bottom: 10px;
-    position: relative;
-    text-transform: capitalize;
-    display: block;
-    text-align: left;
-}
-.other-service .title:after {
-    background-color: #F27B00;
-    content: "";
-    width: 60px;
-    height: 3px;
-    position: absolute;
-    left: 0;
-    top: 40px;
-    display: block;
-}
-.other-service ul li a{
-    color: #575757;
-}
-
-.cta_whatsapp {
-    background: url(../img/whatsapp-strip.png) no-repeat;
-    background-size: cover;
-    display: block;
-    margin: 30px 0px;
-}
-.cta_whatsapp .inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.cta_whatsapp .left {
-    padding: 30px 0;
-}
-.cta_whatsapp .qr-text {
-    display: inline-block;
-    padding: 3px 10px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    background: #fff;
-    font-weight: 500;
-}
-.cta_whatsapp .cta_headline {
-    display: flex;
-    align-items: center; 
-}
-.cta_whatsapp a {
-    padding: 8px 24px;
-    border-radius: 4px;
-    text-transform: capitalize;
-    color: #000;
-    background: #ffd30b;
-}
-.cta_whatsapp p {
-    font-size: 34px;
-    line-height: 40px;
-    color: #fff;
-    margin-bottom: 0;
-}
-.cta_whatsapp strong {
-    color: #ffd30b;
-}
-.services-block-icon {
-    padding: 50px 0px;
-}
-.contact-strip .phn-no {
-    margin-left: 30px;
-    font-size: 25px;
-    /* padding-top: 0; */
-    line-height: 20px;
-    padding: 15px 40px;
-    border-radius: 4px;
-}
-ul.common-scroll li {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-ul.common-scroll li a{
-    padding: 10px 0px !important;
-    transition: all .4s ease;
-}
-ul.common-scroll li a:hover{
-    color: #0071f3;
-    padding-left: 5px !important;
-}
-
 /*responsive*/
 
 
@@ -1642,7 +1466,10 @@ nav.desktop-menu {
 .top-content .left h2 {  
     font-size: 24px;
 }
-
+.top-content ul li {   
+    font-size: 11px;
+    margin-right: 15px;    
+}
   .mobile-menu-fixed-bar {
         background:#fff;
         position: fixed;
@@ -1651,6 +1478,7 @@ nav.desktop-menu {
         width: 100%;
         z-index: 1;        
         box-shadow:0 -1px 10px -1px rgb(185 185 185);
+
 
     }
 
@@ -1705,12 +1533,8 @@ nav.desktop-menu {
 }
 }
 @media only screen and (max-width: 600px) {
-    a.whatchat-btn span {
-        display: none;
-    }
-    .ser-main-content h2:before, .ser-main-content h3:before, .ser-main-content h4:before {
-        display: none;
-    }  
+
+  
    .menu-toggle{
     display: block;
 }
@@ -1761,17 +1585,12 @@ nav ul li:hover .short-submenu {
 }
 .button-group .re-logo {
     margin-bottom: 13px;
-    width: 100%;
-    text-align: center;
 }
 .button-group .re-logo .order-button {
     margin-right: 0px;
-    padding: 6px 30px; 
-        width: 100%;
+    padding: 6px 30px;    
 }
-.banner_form .submit_btn {
-    width: 100% !important;
-}
+
 .discount-desktop .discount-inner .offer-action {
     width: 100%;    
         text-align: center;
@@ -1803,20 +1622,6 @@ nav ul li:hover .short-submenu {
 }
 .services-step .arrow { 
     display: none;
-}
-
-.cta_whatsapp .inner {
-    display: inherit;
-    }
-    .cta_whatsapp .cta_headline {
-    display: inherit;
-}
-.cta_whatsapp a {   
-    margin-top: 20px;
-    display: inline-block;
-}
-.cta_whatsapp{
-    padding-bottom: 30px;
 }
   }
 
